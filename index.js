@@ -2,12 +2,8 @@ let request = require('request');
 let axios = require('axios');
 let express = require('express');
 let app = express(); 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
-const server = app.listen(7000, () => {
-    console.log(`Express running → PORT ${server.address().port}`);
-});
+app.get('/', (req, res) => res.send('WECOME TO SITE CRAWLER'))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 request('https://coronaapiwom.herokuapp.com/apidata', function (error, response, body) {
     if (!error && response.statusCode == 200) {
