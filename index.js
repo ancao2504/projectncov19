@@ -49,3 +49,17 @@ function sendMessageTelegram(textMessage) {
     });
 }
 
+let CronJob = require('cron').CronJob;
+let job = new CronJob('00 00 6 * * 1-7', function() {
+  /*
+   * Runs every weekday (Monday through Friday)
+   * at 11:30:00 AM. It does not run on Saturday
+   * or Sunday.
+   */
+  }, function () {
+    /* This function is executed when the job stops */
+  },
+  true, /* Start the job right now */
+  'Asia/Ho_Chi_Minh' /* Time zone of this job. */
+);
+job.start();
