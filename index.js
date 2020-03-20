@@ -53,15 +53,15 @@ function sendMessageTelegram(textMessage) {
     });
 }
 
-const cron = require('cron');
-const job = new cron.CronJob({
-  cronTime: '00 00 13 * * 0-6', // Chạy Jobs vào 23h30 hằng đêm
-  onTick: function() {
-    console.log('Cron jub runing...');
-  },
-  start: true, 
-  timeZone: 'Asia/Ho_Chi_Minh' // Lưu ý set lại time zone cho đúng 
-});
+// const cron = require('cron');
+// const job = new cron.CronJob({
+//   cronTime: '00 00 13 * * 0-6', // Chạy Jobs vào 23h30 hằng đêm
+//   onTick: function() {
+//     console.log('Cron jub runing...');
+//   },
+//   start: true, 
+//   timeZone: 'Asia/Ho_Chi_Minh' // Lưu ý set lại time zone cho đúng 
+// });
 
-job.start();
+// job.start();
 
