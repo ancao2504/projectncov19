@@ -3,7 +3,7 @@ let axios = require('axios');
 let express = require('express');
 let app = express(); 
 const port = process.env.PORT || 3000;
-app.get('/', (req, res) => res.send('WECOME TO SITE CRAWLER'))
+app.get('/', (req, res) => res.send('THỐNG KÊ TÌNH HÌNH DICH BỆNH ĐƯỢC VIẾT BẰNG NODEJS'))
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 request('https://coronaapiwom.herokuapp.com/apidata', function (error, response, body) {
