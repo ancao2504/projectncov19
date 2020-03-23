@@ -20,12 +20,13 @@ request('https://coronaapiwom.herokuapp.com/apidata', function (error, response,
             let totalCases = json[index].Total_Cases;
             let newCases = json[index].New_Cases;
             let totalDeaths = json[index].Total_Deaths;
+            let newDeaths = json[index].New_Deaths;
             let totalRecovered = json[index].Total_Recovered;
             let seriousCases = json[index].Serious_Cases;
             let arrayCountry = ['China', 'Vietnam', 'Italy', 'USA', 'UK', 'Malaysia', 'S. Korea', 'Singapore', 'Indonesia', 'Thailand', 'Philippines', 'India', 'Japan', 'Iran'];
             arrayCountry.forEach(function(valueCountry){
                 if(countryName == valueCountry) {
-                    messenger = countryName +' hiên tại đã có '+ totalCases +' ca nhiễm, trong đó: '+ newCases +' ca mới, '+ seriousCases +' ca nghiêm trọng, '+ totalDeaths +' ca tử vong và '+ totalRecovered +' đã phục hồi';
+                    messenger = countryName +' hiên tại đã có '+ totalCases +' ca nhiễm, trong đó: '+ newCases +' ca mới, '+ seriousCases +' ca nghiêm trọng, '+ totalDeaths +' ca tử vong, '+ newDeaths + ' ca tử vong mới ' + 'và '+ totalRecovered +' đã phục hồi';
                     sendMessageTelegram(messenger.italics())
                 }
             }) 
