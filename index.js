@@ -3,7 +3,7 @@ let axios = require('axios');
 let express = require('express');
 let app = express(); 
 let URL = 'https://viruscoronaapi.herokuapp.com/worldometers';
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 app.get('/', (req, res) => res.send('THỐNG KÊ TÌNH HÌNH DICH BỆNH ĐƯỢC VIẾT BẰNG NODEJS'))
 
@@ -31,7 +31,7 @@ function extractDataNcov19(url) {
 	            let arrayCountry = ['China', 'Vietnam', 'Italy', 'USA', 'UK', 'Malaysia', 'S. Korea', 'Singapore', 'Indonesia', 'Thailand', 'Philippines', 'India', 'Japan', 'Iran'];
 	            arrayCountry.forEach(function(valueCountry){
 	                if(countryName == valueCountry) {
-						messenger += countryName +' hiên tại đã có '+ totalCases +' ca nhiễm, trong đó: '+ newCases +' ca mới, '+ seriousCases +' ca nghiêm trọng, '+ totalDeaths +' ca tử vong, '+ newDeaths + ' ca tử vong mới ' + 'và '+ totalRecovered +' đã phục hồi';
+						messenger += countryName.bold() +' hiên tại đã có '+ totalCases +' ca nhiễm, trong đó: '+ newCases +' ca mới, '+ seriousCases +' ca nghiêm trọng, '+ totalDeaths +' ca tử vong, '+ newDeaths + ' ca tử vong mới ' + 'và '+ totalRecovered +' đã phục hồi';
 						messenger += "\r\n";
 					}
 					
