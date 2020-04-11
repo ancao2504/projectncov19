@@ -31,11 +31,14 @@ function extractDataNcov19(url) {
 	            let arrayCountry = ['China', 'Vietnam', 'Italy', 'USA', 'UK', 'Malaysia', 'S. Korea', 'Singapore', 'Indonesia', 'Thailand', 'Philippines', 'India', 'Japan', 'Iran'];
 	            arrayCountry.forEach(function(valueCountry){
 	                if(countryName == valueCountry) {
-	                    messenger = countryName +' hiên tại đã có '+ totalCases +' ca nhiễm, trong đó: '+ newCases +' ca mới, '+ seriousCases +' ca nghiêm trọng, '+ totalDeaths +' ca tử vong, '+ newDeaths + ' ca tử vong mới ' + 'và '+ totalRecovered +' đã phục hồi';
-	                    sendMessageTelegram(messenger.italics())
-	                }
-	            }) 
-	        }
+						messenger += countryName +' hiên tại đã có '+ totalCases +' ca nhiễm, trong đó: '+ newCases +' ca mới, '+ seriousCases +' ca nghiêm trọng, '+ totalDeaths +' ca tử vong, '+ newDeaths + ' ca tử vong mới ' + 'và '+ totalRecovered +' đã phục hồi';
+						messenger += "\r\n";
+					}
+					
+				}) 
+				
+			}
+			sendMessageTelegram(messenger.italics())
 	    }else {
 	        sendMessageTelegram('API NO CONNECT: ' + url)
 	    }
