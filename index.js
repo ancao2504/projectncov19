@@ -1,9 +1,11 @@
 let request = require('request');
 let axios = require('axios');
 let express = require('express');
+let fs = require('fs');
 let app = express(); 
 let URL = 'https://viruscoronaapi.herokuapp.com/worldometers';
-const port = process.env.PORT || 4000;
+let fileTxt = 'ncov19.txt';
+const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => res.send('THỐNG KÊ TÌNH HÌNH DICH BỆNH ĐƯỢC VIẾT BẰNG NODEJS'))
 
@@ -18,8 +20,9 @@ function extractDataNcov19(url) {
 	        let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 	        let json = JSON.parse(body)
 	        let messenger = '';
-	        let content = 'THỐNG KÊ TÌNH HÌNH DỊCH BỆNH nCoV-19. CẬP NHẬT NGÀY ' + date + ' LÚC ' + time;
-	        sendMessageTelegram(content.bold())
+			messenger += 'THỐNG KÊ TÌNH HÌNH DỊCH BỆNH nCoV-19. CẬP NHẬT NGÀY ' + date + ' LÚC ' + time;
+			messenger += '\r\n';
+	        // sendMessageTelegram(content.bold())
 	        for (let index = 0; index < json.length; index++) {
 	            let countryName = json[index].Country_Name;
 	            let totalCases = json[index].Total_Cases;
@@ -33,14 +36,24 @@ function extractDataNcov19(url) {
 	                if(countryName == valueCountry) {
 						messenger += countryName.bold() +' hiên tại đã có '+ totalCases +' ca nhiễm, trong đó: '+ newCases +' ca mới, '+ seriousCases +' ca nghiêm trọng, '+ totalDeaths +' ca tử vong, '+ newDeaths + ' ca tử vong mới ' + 'và '+ totalRecovered +' đã phục hồi';
 						messenger += "\r\n";
+						fs.writeFile(fileTxt, messenger, function (err) {
+							if (err) throw err;
+							console.log('Saved!');
+						});
 					}
 					
 				}) 
 				
 			}
 			sendMessageTelegram(messenger.italics())
+			
+			
 	    }else {
-	        sendMessageTelegram('API NO CONNECT: ' + url)
+			sendMessageTelegram('API NO CONNECT: ' + url);
+			fs.readFile(fileTxt, 'utf8', function(err, contents) {
+				sendMessageTelegram(contents);
+			});
+			console.log('after calling readFile');
 	    }
 	});
 }

@@ -1,0 +1,15 @@
+THỐNG KÊ TÌNH HÌNH DỊCH BỆNH nCoV-19. CẬP NHẬT NGÀY 19-4-2020 LÚC 11:27:50
+<b>USA</b> hiên tại đã có 738,913 ca nhiễm, trong đó: +121 ca mới, 13,551 ca nghiêm trọng, 39,015 ca tử vong, +1 ca tử vong mới và 68,285 đã phục hồi
+<b>Italy</b> hiên tại đã có 175,925 ca nhiễm, trong đó: 0 ca mới, 2,733 ca nghiêm trọng, 23,227 ca tử vong, +0 ca tử vong mới và 44,927 đã phục hồi
+<b>UK</b> hiên tại đã có 114,217 ca nhiễm, trong đó: 0 ca mới, 1,559 ca nghiêm trọng, 15,464 ca tử vong, +0 ca tử vong mới và N/A đã phục hồi
+<b>Iran</b> hiên tại đã có 80,868 ca nhiễm, trong đó: 0 ca mới, 3,513 ca nghiêm trọng, 5,031 ca tử vong, +0 ca tử vong mới và 55,987 đã phục hồi
+<b>India</b> hiên tại đã có 16,365 ca nhiễm, trong đó: 0 ca mới, 0 ca nghiêm trọng, 521 ca tử vong, +0 ca tử vong mới và 2,466 đã phục hồi
+<b>S. Korea</b> hiên tại đã có 10,661 ca nhiễm, trong đó: +8 ca mới, 55 ca nghiêm trọng, 234 ca tử vong, +2 ca tử vong mới và 8,042 đã phục hồi
+<b>Japan</b> hiên tại đã có 10,296 ca nhiễm, trong đó: 0 ca mới, 221 ca nghiêm trọng, 222 ca tử vong, +0 ca tử vong mới và 1,069 đã phục hồi
+<b>Indonesia</b> hiên tại đã có 6,248 ca nhiễm, trong đó: 0 ca mới, 0 ca nghiêm trọng, 535 ca tử vong, +0 ca tử vong mới và 631 đã phục hồi
+<b>Philippines</b> hiên tại đã có 6,087 ca nhiễm, trong đó: 0 ca mới, 1 ca nghiêm trọng, 397 ca tử vong, +0 ca tử vong mới và 516 đã phục hồi
+<b>Singapore</b> hiên tại đã có 5,992 ca nhiễm, trong đó: 0 ca mới, 23 ca nghiêm trọng, 11 ca tử vong, +0 ca tử vong mới và 740 đã phục hồi
+<b>Malaysia</b> hiên tại đã có 5,305 ca nhiễm, trong đó: 0 ca mới, 49 ca nghiêm trọng, 88 ca tử vong, +0 ca tử vong mới và 3,102 đã phục hồi
+<b>Thailand</b> hiên tại đã có 2,733 ca nhiễm, trong đó: 0 ca mới, 61 ca nghiêm trọng, 47 ca tử vong, +0 ca tử vong mới và 1,787 đã phục hồi
+<b>Vietnam</b> hiên tại đã có 268 ca nhiễm, trong đó: 0 ca mới, 8 ca nghiêm trọng, 0 ca tử vong, +0 ca tử vong mới và 201 đã phục hồi
+<b>China</b> hiên tại đã có 82,735 ca nhiễm, trong đó: +16 ca mới, 85 ca nghiêm trọng, 4,632 ca tử vong, +0 ca tử vong mới và 77,062 đã phục hồi
