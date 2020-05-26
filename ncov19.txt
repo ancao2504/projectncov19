@@ -1,4 +1,4 @@
-THỐNG KÊ TÌNH HÌNH DỊCH BỆNH nCoV-19. CẬP NHẬT NGÀY 19-4-2020 LÚC 11:27:50
+THỐNG KÊ TÌNH HÌNH DỊCH BỆNH nCoV-19. CẬP NHẬT NGÀY 19-4-2020 LÚC 11:37:28
 <b>USA</b> hiên tại đã có 738,913 ca nhiễm, trong đó: +121 ca mới, 13,551 ca nghiêm trọng, 39,015 ca tử vong, +1 ca tử vong mới và 68,285 đã phục hồi
 <b>Italy</b> hiên tại đã có 175,925 ca nhiễm, trong đó: 0 ca mới, 2,733 ca nghiêm trọng, 23,227 ca tử vong, +0 ca tử vong mới và 44,927 đã phục hồi
 <b>UK</b> hiên tại đã có 114,217 ca nhiễm, trong đó: 0 ca mới, 1,559 ca nghiêm trọng, 15,464 ca tử vong, +0 ca tử vong mới và N/A đã phục hồi

@@ -5,7 +5,7 @@ let fs = require('fs');
 let app = express(); 
 let URL = 'https://viruscoronaapi.herokuapp.com/worldometers';
 let fileTxt = 'ncov19.txt';
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 7000;
 
 app.get('/', (req, res) => res.send('THỐNG KÊ TÌNH HÌNH DICH BỆNH ĐƯỢC VIẾT BẰNG NODEJS'))
 
@@ -49,11 +49,7 @@ function extractDataNcov19(url) {
 			
 			
 	    }else {
-			sendMessageTelegram('API NO CONNECT: ' + url);
-			fs.readFile(fileTxt, 'utf8', function(err, contents) {
-				sendMessageTelegram(contents);
-			});
-			console.log('after calling readFile');
+			sendMessageTelegram('XEM THÔNG TIN VIRUSCORONA TẠI: ' + 'https://ncov.moh.gov.vn/');
 	    }
 	});
 }
